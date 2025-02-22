@@ -8,6 +8,11 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import scisrc.mobiledev.ecommercelayout.databinding.ActivityMainBinding
 import scisrc.mobiledev.ecommercelayout.ui.HomeFragment
+import scisrc.mobiledev.ecommercelayout.ui.cart
+import scisrc.mobiledev.ecommercelayout.ui.detail
+import scisrc.mobiledev.ecommercelayout.ui.favorites
+import scisrc.mobiledev.ecommercelayout.ui.products
+import scisrc.mobiledev.ecommercelayout.ui.profile
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -42,6 +47,36 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragment_container, HomeFragment())
+                        .commit()
+                }
+
+                R.id.nav_products -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, products())
+                        .commit()
+                }
+
+                R.id.nav_cart -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, cart())
+                        .commit()
+                }
+
+                R.id.nav_favorites -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, favorites())
+                        .commit()
+                }
+
+                R.id.nav_profile -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, profile())
+                    .commit()
+                }
+
+                R.id.textView6 -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, detail())
                         .commit()
                 }
 

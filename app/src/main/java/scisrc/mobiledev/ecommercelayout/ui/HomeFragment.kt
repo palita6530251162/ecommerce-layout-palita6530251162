@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import scisrc.mobiledev.ecommercelayout.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class   HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
