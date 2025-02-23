@@ -154,18 +154,18 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="71dp"
-        android:layout_height="12dp"
+        android:layout_width="89dp"
+        android:layout_height="16dp"
         android:clickable="true"
         android:focusable="true"
         android:text="Floral Maxi Dress"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.303" />
 
     <TextView
         android:id="@+id/textView21"
