@@ -69,9 +69,9 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_profile -> {
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, profile())
-                    .commit()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, profile())
+                        .commit()
                 }
 
                 R.id.textView6 -> {
@@ -93,6 +93,8 @@ class MainActivity : AppCompatActivity() {
             binding.navView.setCheckedItem(R.id.nav_home)
         }
     }
+
+
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
